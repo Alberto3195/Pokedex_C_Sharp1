@@ -13,7 +13,7 @@ namespace PokedexC_sharp
         private static string tabla = "pokemon";
 
         //Consulta para obtener todos los datos de los Pokemon que aparecerán en la pokedex fera del dataGridView
-        public string datos = "SELECT id, nombre, altura, peso, habitat, tipo1, especie, habilidad, imagen FROM " + tabla;
+        public string datos = "SELECT id, nombre, altura, peso, habitat, tipo1, tipo2, especie, habilidad, imagen FROM " + tabla;
 
         public DataTable getPokemonPorId(int id)
         {
@@ -75,6 +75,5 @@ namespace PokedexC_sharp
                 throw e;
             }
         }
-
     }
 }

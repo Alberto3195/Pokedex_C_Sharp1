@@ -61,16 +61,6 @@ namespace PokedexC_sharp.Properties {
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pokedex {
-            get {
-                object obj = ResourceManager.GetObject("pokedex", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a -- phpMyAdmin SQL Dump
         ///-- version 5.0.1
         ///-- https://www.phpmyadmin.net/

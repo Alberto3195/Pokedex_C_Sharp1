@@ -44,24 +44,28 @@ namespace PokedexC_sharp
             //MessageBox.Show(eligePokemon.idSeleccionado.ToString());
             misPokemons = consultas.getPokemonPorId(eligePokemon.idSeleccionado);
 
-            nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
-            pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
-            id.Text = misPokemons.Rows[0]["id"].ToString();
-            tipo.Text = misPokemons.Rows[0]["tipo1"].ToString();
+            textBox1.Text = misPokemons.Rows[0]["id"].ToString();
+            textBox2.Text = misPokemons.Rows[0]["nombre"].ToString();
+            peso.Text = misPokemons.Rows[0]["peso"].ToString();
+            tipo1.Text = misPokemons.Rows[0]["tipo1"].ToString();
+            tipo2.Text = misPokemons.Rows[0]["tipo2"].ToString();
             habilidad.Text = misPokemons.Rows[0]["habilidad"].ToString();
             especie.Text = misPokemons.Rows[0]["especie"].ToString();
             habitat.Text = misPokemons.Rows[0]["habitat"].ToString();
             altura.Text = misPokemons.Rows[0]["altura"].ToString();
-            peso.Text = misPokemons.Rows[0]["peso"].ToString();
+            
+
+            pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }
         private void Datos()
         //Ahorro lineas de codigo creando éste método 
         //que me sirve tanto par botón izq como para el derecho
         {
             misPokemons = consultas.getPokemonPorId(idActual);
-            id.Text = misPokemons.Rows[0]["id"].ToString();
-            nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
-            tipo.Text = misPokemons.Rows[0]["tipo1"].ToString();
+            textBox1.Text = misPokemons.Rows[0]["id"].ToString();
+            textBox2.Text = misPokemons.Rows[0]["nombre"].ToString();
+            tipo1.Text = misPokemons.Rows[0]["tipo1"].ToString();
+            tipo2.Text = misPokemons.Rows[0]["tipo2"].ToString();
             altura.Text = misPokemons.Rows[0]["altura"].ToString();
             peso.Text = misPokemons.Rows[0]["peso"].ToString();
             habitat.Text = misPokemons.Rows[0]["habitat"].ToString();
@@ -69,5 +73,6 @@ namespace PokedexC_sharp
             habilidad.Text = misPokemons.Rows[0]["habilidad"].ToString();
             pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }
+
     }
 }

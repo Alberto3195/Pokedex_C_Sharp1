@@ -117,8 +117,5 @@
   <ItemGroup>
     <None Include="Resources\pokemon2020_conImagenesBLOB.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pokedex.jpg" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
