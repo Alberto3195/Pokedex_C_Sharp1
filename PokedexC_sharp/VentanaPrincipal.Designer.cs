@@ -40,7 +40,6 @@
             this.peso = new System.Windows.Forms.Label();
             this.altura = new System.Windows.Forms.Label();
             this.tipo2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.NombrePokemon = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -170,14 +169,6 @@
             this.tipo2.Text = "Tipo2";
             this.tipo2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(323, 260);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 45);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "BUSCAR";
-            // 
             // NombrePokemon
             // 
             this.NombrePokemon.BackColor = System.Drawing.Color.Transparent;
@@ -208,7 +199,6 @@
             this.ClientSize = new System.Drawing.Size(485, 347);
             this.Controls.Add(this.id);
             this.Controls.Add(this.NombrePokemon);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.tipo2);
             this.Controls.Add(this.altura);
             this.Controls.Add(this.peso);
@@ -243,7 +233,6 @@
         private System.Windows.Forms.Label peso;
         private System.Windows.Forms.Label altura;
         private System.Windows.Forms.Label tipo2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label NombrePokemon;
         private System.Windows.Forms.Label id;
     }
