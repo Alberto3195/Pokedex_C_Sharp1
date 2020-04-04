@@ -44,8 +44,8 @@ namespace PokedexC_sharp
             //MessageBox.Show(eligePokemon.idSeleccionado.ToString());
             misPokemons = consultas.getPokemonPorId(eligePokemon.idSeleccionado);
 
-            textBox1.Text = misPokemons.Rows[0]["id"].ToString();
-            textBox2.Text = misPokemons.Rows[0]["nombre"].ToString();
+            id.Text = misPokemons.Rows[0]["id"].ToString();
+            NombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
             peso.Text = misPokemons.Rows[0]["peso"].ToString();
             tipo1.Text = misPokemons.Rows[0]["tipo1"].ToString();
             tipo2.Text = misPokemons.Rows[0]["tipo2"].ToString();
@@ -62,8 +62,8 @@ namespace PokedexC_sharp
         //que me sirve tanto par botón izq como para el derecho
         {
             misPokemons = consultas.getPokemonPorId(idActual);
-            textBox1.Text = misPokemons.Rows[0]["id"].ToString();
-            textBox2.Text = misPokemons.Rows[0]["nombre"].ToString();
+            id.Text = misPokemons.Rows[0]["id"].ToString();
+            NombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
             tipo1.Text = misPokemons.Rows[0]["tipo1"].ToString();
             tipo2.Text = misPokemons.Rows[0]["tipo2"].ToString();
             altura.Text = misPokemons.Rows[0]["altura"].ToString();

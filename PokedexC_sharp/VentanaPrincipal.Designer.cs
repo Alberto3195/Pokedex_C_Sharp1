@@ -41,8 +41,8 @@
             this.altura = new System.Windows.Forms.Label();
             this.tipo2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.NombrePokemon = new System.Windows.Forms.Label();
+            this.id = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -178,19 +178,25 @@
             this.button1.TabIndex = 18;
             this.button1.Text = "BUSCAR";
             // 
-            // textBox1
+            // NombrePokemon
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(69, 22);
-            this.textBox1.TabIndex = 19;
+            this.NombrePokemon.BackColor = System.Drawing.Color.Transparent;
+            this.NombrePokemon.Location = new System.Drawing.Point(132, 33);
+            this.NombrePokemon.Name = "NombrePokemon";
+            this.NombrePokemon.Size = new System.Drawing.Size(88, 30);
+            this.NombrePokemon.TabIndex = 19;
+            this.NombrePokemon.Text = "Nombre";
+            this.NombrePokemon.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox2
+            // id
             // 
-            this.textBox2.Location = new System.Drawing.Point(110, 40);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 20;
+            this.id.BackColor = System.Drawing.Color.Transparent;
+            this.id.Location = new System.Drawing.Point(38, 33);
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(88, 30);
+            this.id.TabIndex = 20;
+            this.id.Text = "ID";
+            this.id.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // VentanaPrincipal
             // 
@@ -200,8 +206,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(485, 347);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.id);
+            this.Controls.Add(this.NombrePokemon);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tipo2);
             this.Controls.Add(this.altura);
@@ -221,7 +227,6 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -239,8 +244,8 @@
         private System.Windows.Forms.Label altura;
         private System.Windows.Forms.Label tipo2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label NombrePokemon;
+        private System.Windows.Forms.Label id;
     }
 }
 
