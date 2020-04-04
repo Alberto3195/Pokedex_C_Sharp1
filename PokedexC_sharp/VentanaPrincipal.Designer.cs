@@ -196,7 +196,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(485, 347);
+            this.ClientSize = new System.Drawing.Size(498, 794);
             this.Controls.Add(this.id);
             this.Controls.Add(this.NombrePokemon);
             this.Controls.Add(this.tipo2);
