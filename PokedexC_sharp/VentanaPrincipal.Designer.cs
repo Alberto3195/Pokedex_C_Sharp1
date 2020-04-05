@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
             this.izq = new System.Windows.Forms.Button();
             this.der = new System.Windows.Forms.Button();
             this.tipo1 = new System.Windows.Forms.Label();
@@ -42,16 +43,19 @@
             this.tipo2 = new System.Windows.Forms.Label();
             this.NombrePokemon = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.descripcion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // izq
             // 
-            this.izq.BackColor = System.Drawing.Color.Transparent;
+            this.izq.BackColor = System.Drawing.Color.DimGray;
             this.izq.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.izq.Location = new System.Drawing.Point(35, 260);
+            this.izq.Location = new System.Drawing.Point(304, 452);
             this.izq.Name = "izq";
-            this.izq.Size = new System.Drawing.Size(64, 45);
+            this.izq.Size = new System.Drawing.Size(52, 32);
             this.izq.TabIndex = 1;
             this.izq.Text = "<";
             this.izq.UseVisualStyleBackColor = false;
@@ -59,11 +63,11 @@
             // 
             // der
             // 
-            this.der.BackColor = System.Drawing.Color.Transparent;
+            this.der.BackColor = System.Drawing.Color.DimGray;
             this.der.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.der.Location = new System.Drawing.Point(250, 260);
+            this.der.Location = new System.Drawing.Point(366, 452);
             this.der.Name = "der";
-            this.der.Size = new System.Drawing.Size(64, 45);
+            this.der.Size = new System.Drawing.Size(53, 31);
             this.der.TabIndex = 2;
             this.der.Text = ">";
             this.der.UseVisualStyleBackColor = false;
@@ -71,51 +75,51 @@
             // 
             // tipo1
             // 
-            this.tipo1.BackColor = System.Drawing.Color.Transparent;
-            this.tipo1.Location = new System.Drawing.Point(320, 66);
+            this.tipo1.BackColor = System.Drawing.Color.Coral;
+            this.tipo1.Location = new System.Drawing.Point(40, 452);
             this.tipo1.Name = "tipo1";
-            this.tipo1.Size = new System.Drawing.Size(122, 30);
+            this.tipo1.Size = new System.Drawing.Size(138, 30);
             this.tipo1.TabIndex = 5;
             this.tipo1.Text = "Tipo";
             this.tipo1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // habitat
             // 
-            this.habitat.BackColor = System.Drawing.Color.Transparent;
-            this.habitat.Location = new System.Drawing.Point(320, 162);
+            this.habitat.BackColor = System.Drawing.Color.Coral;
+            this.habitat.Location = new System.Drawing.Point(184, 416);
             this.habitat.Name = "habitat";
-            this.habitat.Size = new System.Drawing.Size(122, 30);
+            this.habitat.Size = new System.Drawing.Size(144, 30);
             this.habitat.TabIndex = 8;
             this.habitat.Text = "Habitat";
             this.habitat.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // especie
             // 
-            this.especie.BackColor = System.Drawing.Color.Transparent;
-            this.especie.Location = new System.Drawing.Point(320, 194);
+            this.especie.BackColor = System.Drawing.Color.Coral;
+            this.especie.Location = new System.Drawing.Point(41, 522);
             this.especie.Name = "especie";
-            this.especie.Size = new System.Drawing.Size(122, 30);
+            this.especie.Size = new System.Drawing.Size(137, 30);
             this.especie.TabIndex = 9;
             this.especie.Text = "Especie";
             this.especie.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // habilidad
             // 
-            this.habilidad.BackColor = System.Drawing.Color.Transparent;
-            this.habilidad.Location = new System.Drawing.Point(320, 130);
+            this.habilidad.BackColor = System.Drawing.Color.Coral;
+            this.habilidad.Location = new System.Drawing.Point(188, 488);
             this.habilidad.Name = "habilidad";
-            this.habilidad.Size = new System.Drawing.Size(122, 30);
+            this.habilidad.Size = new System.Drawing.Size(141, 30);
             this.habilidad.TabIndex = 10;
             this.habilidad.Text = "Habilidad";
             this.habilidad.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // X
             // 
-            this.X.BackColor = System.Drawing.Color.Transparent;
+            this.X.BackColor = System.Drawing.Color.Red;
             this.X.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.X.Location = new System.Drawing.Point(105, 260);
+            this.X.Location = new System.Drawing.Point(342, 489);
             this.X.Name = "X";
-            this.X.Size = new System.Drawing.Size(139, 45);
+            this.X.Size = new System.Drawing.Size(77, 63);
             this.X.TabIndex = 11;
             this.X.Text = "X";
             this.X.UseVisualStyleBackColor = false;
@@ -123,7 +127,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(66, 66);
+            this.pictureBox1.Location = new System.Drawing.Point(110, 161);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(217, 188);
             this.pictureBox1.TabIndex = 13;
@@ -131,63 +135,85 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(320, 33);
+            this.label1.BackColor = System.Drawing.Color.Gray;
+            this.label1.Font = new System.Drawing.Font("Mistral", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(129, 356);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 30);
+            this.label1.Size = new System.Drawing.Size(130, 39);
             this.label1.TabIndex = 14;
             this.label1.Text = "POKEDEX";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // peso
             // 
-            this.peso.BackColor = System.Drawing.Color.Transparent;
-            this.peso.Location = new System.Drawing.Point(226, 33);
+            this.peso.BackColor = System.Drawing.Color.Coral;
+            this.peso.Location = new System.Drawing.Point(188, 522);
             this.peso.Name = "peso";
-            this.peso.Size = new System.Drawing.Size(88, 30);
+            this.peso.Size = new System.Drawing.Size(141, 30);
             this.peso.TabIndex = 15;
             this.peso.Text = "Peso";
             this.peso.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // altura
             // 
-            this.altura.BackColor = System.Drawing.Color.Transparent;
-            this.altura.Location = new System.Drawing.Point(320, 226);
+            this.altura.BackColor = System.Drawing.Color.Coral;
+            this.altura.Location = new System.Drawing.Point(40, 487);
             this.altura.Name = "altura";
-            this.altura.Size = new System.Drawing.Size(122, 30);
+            this.altura.Size = new System.Drawing.Size(138, 30);
             this.altura.TabIndex = 16;
             this.altura.Text = "Altura";
             this.altura.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tipo2
             // 
-            this.tipo2.BackColor = System.Drawing.Color.Transparent;
-            this.tipo2.Location = new System.Drawing.Point(320, 98);
+            this.tipo2.BackColor = System.Drawing.Color.Coral;
+            this.tipo2.Location = new System.Drawing.Point(184, 452);
             this.tipo2.Name = "tipo2";
-            this.tipo2.Size = new System.Drawing.Size(122, 30);
+            this.tipo2.Size = new System.Drawing.Size(114, 30);
             this.tipo2.TabIndex = 17;
             this.tipo2.Text = "Tipo2";
             this.tipo2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // NombrePokemon
             // 
-            this.NombrePokemon.BackColor = System.Drawing.Color.Transparent;
-            this.NombrePokemon.Location = new System.Drawing.Point(132, 33);
+            this.NombrePokemon.BackColor = System.Drawing.Color.Coral;
+            this.NombrePokemon.Location = new System.Drawing.Point(40, 416);
             this.NombrePokemon.Name = "NombrePokemon";
-            this.NombrePokemon.Size = new System.Drawing.Size(88, 30);
+            this.NombrePokemon.Size = new System.Drawing.Size(138, 30);
             this.NombrePokemon.TabIndex = 19;
             this.NombrePokemon.Text = "Nombre";
             this.NombrePokemon.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // id
             // 
-            this.id.BackColor = System.Drawing.Color.Transparent;
-            this.id.Location = new System.Drawing.Point(38, 33);
+            this.id.BackColor = System.Drawing.Color.Aqua;
+            this.id.Location = new System.Drawing.Point(62, 31);
             this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(88, 30);
+            this.id.Size = new System.Drawing.Size(59, 31);
             this.id.TabIndex = 20;
             this.id.Text = "ID";
             this.id.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(512, 581);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
+            // 
+            // descripcion
+            // 
+            this.descripcion.BackColor = System.Drawing.Color.Red;
+            this.descripcion.Location = new System.Drawing.Point(191, 46);
+            this.descripcion.Name = "descripcion";
+            this.descripcion.Size = new System.Drawing.Size(228, 86);
+            this.descripcion.TabIndex = 22;
+            this.descripcion.Text = "Descripcion";
             // 
             // VentanaPrincipal
             // 
@@ -196,7 +222,8 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(498, 622);
+            this.ClientSize = new System.Drawing.Size(512, 581);
+            this.Controls.Add(this.descripcion);
             this.Controls.Add(this.id);
             this.Controls.Add(this.NombrePokemon);
             this.Controls.Add(this.tipo2);
@@ -211,11 +238,13 @@
             this.Controls.Add(this.tipo1);
             this.Controls.Add(this.der);
             this.Controls.Add(this.izq);
+            this.Controls.Add(this.pictureBox2);
             this.ImeMode = System.Windows.Forms.ImeMode.Katakana;
             this.Name = "VentanaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -235,6 +264,8 @@
         private System.Windows.Forms.Label tipo2;
         private System.Windows.Forms.Label NombrePokemon;
         private System.Windows.Forms.Label id;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label descripcion;
     }
 }
 
