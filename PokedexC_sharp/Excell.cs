@@ -28,9 +28,17 @@ namespace PokedexC_sharp
             this.Close();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            String elemento = textBox1.Text;
+            
+        }
+
+        private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            String id = dataGridView1.Rows[e.RowIndex].Cells["id"].Value.ToString();
+            String nombre = dataGridView1.Rows[e.RowIndex].Cells["nombre"].Value.ToString();
+
+            MessageBox.Show(consultas.actualizaPokemon(nombre, id));
         }
     }
 }

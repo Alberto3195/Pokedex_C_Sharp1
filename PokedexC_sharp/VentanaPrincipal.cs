@@ -34,7 +34,7 @@ namespace PokedexC_sharp
         {
             idActual++;
             if (idActual >= 151) { idActual = 151; }
-            Datos();;
+            Datos();
         }
         private void X_Click(object sender, EventArgs e)
         {
@@ -54,9 +54,9 @@ namespace PokedexC_sharp
             habitat.Text = misPokemons.Rows[0]["habitat"].ToString();
             altura.Text = misPokemons.Rows[0]["altura"].ToString();
             
-
             pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }
+
         private void Datos()
         //Ahorro lineas de codigo creando éste método 
         //que me sirve tanto par botón izq como para el derecho
@@ -71,6 +71,7 @@ namespace PokedexC_sharp
             habitat.Text = misPokemons.Rows[0]["habitat"].ToString();
             especie.Text = misPokemons.Rows[0]["especie"].ToString();
             habilidad.Text = misPokemons.Rows[0]["habilidad"].ToString();
+
             pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }
 

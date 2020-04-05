@@ -20,9 +20,7 @@ namespace PokedexC_sharp
             try
             {
                 miClaseConexion.conexion.Open();
-                MySqlCommand consulta = new MySqlCommand("SELECT * " +
-                                                         "FROM pokemon where id = '"
-                                                         + id + "'", miClaseConexion.conexion);
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM pokemon where id = '" + id + "'", miClaseConexion.conexion);
                 MySqlDataReader resultado = consulta.ExecuteReader();
                 DataTable pokemons = new DataTable();
                 pokemons.Load(resultado);
@@ -34,6 +32,28 @@ namespace PokedexC_sharp
                 throw e;
             }
         }
+
+        public DataTable getPokemonPorNombre(String nombre)
+        {
+
+            try
+            {
+                miClaseConexion.conexion.Open();
+                MySqlCommand consulta =
+                    new MySqlCommand("SELECT id FROM pokemon WHERE nombre ='" + nombre + "'", miClaseConexion.conexion);
+                MySqlDataReader resultado = consulta.ExecuteReader();
+                DataTable pokemons = new DataTable();
+                pokemons.Load(resultado);
+                miClaseConexion.conexion.Close();
+                return pokemons.Rows[0]["id"].ToString();
+
+            }
+            catch (MySqlException e)
+            {
+                throw e;
+            }
+        }
+
         public DataTable getTodosPokemons()
         {
             try
