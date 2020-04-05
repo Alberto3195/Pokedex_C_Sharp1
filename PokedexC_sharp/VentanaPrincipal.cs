@@ -21,7 +21,7 @@ namespace PokedexC_sharp
 
         public Image convierteBlobAImagen(byte[] img)
         //Convierte el Blob almacenado en la base a una imagen legible
-        { 
+        {
             MemoryStream ms = new System.IO.MemoryStream(img);
             return (Image.FromStream(ms));
         }
@@ -38,7 +38,7 @@ namespace PokedexC_sharp
             idActual++;
             if (idActual > 151) { idActual = 1; }
             Datos(idActual);
-            
+
         }
         private void X_Click(object sender, EventArgs e)
         {
@@ -66,6 +66,5 @@ namespace PokedexC_sharp
 
             pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }
-
     }
 }
