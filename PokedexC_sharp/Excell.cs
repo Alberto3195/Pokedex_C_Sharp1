@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data;
 using System.Windows.Forms;
 
 namespace PokedexC_sharp
@@ -33,6 +32,12 @@ namespace PokedexC_sharp
             idSeleccionado = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["id"].Value.ToString());
             Console.WriteLine(idSeleccionado);
             this.Close();
+            //Problema de esto, que no le encuentro otra forma de hacerlo aun que seguro que la hay,
+            //al hacer doble click en un pokemon se cierra el Form que contiene el dataGridView
+            //y se abre otro Form con la Pokedex, pero este Form no es la pantalla principal aun que
+            //contenga toda la apariencia de la misma.
+            //El fallo viene cuando al cerrar la Pokedex desde este form nuevo, se ve que no se cierra
+            //se cierra el Form pero el programa sigue corriendo.
             V.Datos(idSeleccionado);
             V.Show();
         }
